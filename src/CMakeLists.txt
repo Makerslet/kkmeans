@@ -8,10 +8,6 @@ set_target_properties(${TARGET} PROPERTIES
     CXX_STANDARD_REQUIRED ON
 )
 
-target_include_directories(${TARGET}
-    PRIVATE dlib
-)
-
 # максимально строгие настройки компилятора
 if (MSVC)
     target_compile_options(${TARGET} PRIVATE
@@ -25,6 +21,7 @@ endif()
 
 target_link_libraries(${TARGET}
     dlib::dlib
+    blas
     Threads::Threads
 )
 
