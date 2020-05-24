@@ -8,6 +8,7 @@ before_script:
 - sudo apt-get install doxygen
 - sudo apt-get install graphviz
 - sudo apt-get install libdlib-dev
+- sudo apt-get install libblas-dev
 script:
 - cmake .
 - cmake --build .
