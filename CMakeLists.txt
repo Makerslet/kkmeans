@@ -12,6 +12,7 @@ endif()
 
 find_package(dlib REQUIRED)
 find_package(BLAS)
+find_package(LAPACK)
 find_package(Threads REQUIRED)
 
 # подключаем тесты
