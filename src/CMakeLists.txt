@@ -28,6 +28,7 @@ target_link_libraries(${TARGET}
 
 # бинарник кладем в каталог bin
 install(TARGETS ${TARGET} RUNTIME DESTINATION bin)
+install(DIRECTORY ${PROJECT_SOURCE_DIR}/data DESTINATION bin)
 
 # генерить будем deb пакет
 set(CPACK_GENERATOR DEB)
